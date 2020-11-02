@@ -15,7 +15,7 @@
       <a class="item navigation__item" href="#">Kontakt</a>
       <a class="item navigation__item" href="#">Pomoc</a>
     </nav>
-    <section class="ui twelve wide column grid list-container">
+    <section id="items-list" class="ui twelve wide column grid list-container">
       <div class="row">
         <div class="ui action input search-items">
           <input type="text" placeholder="podaj tytuł">
@@ -23,35 +23,34 @@
         </div>
       </div>
     </section>
-
   </main>
   <template id="list-item">
-    <div class="row">
+    <div class="row row-list-item" data-id="">
       <article class="ui grid list-item">
-        <img src="_description/pikachu.jpg" class="four wide column list-item__image">
+        <img src="" class="four wide column list-item__image">
         <div class="ui twelve wide column grid">
           <div class="two column row">
-            <h3 class="fourteen wide column">Lorem ipsum dolor sit amet consectetur adipisicing elit.</h3><span class="two wide column">Lorem</span>
+            <h3 class="thirteen wide column"></h3><span class="three wide column"></span>
           </div>
-          <p class="list-item__description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque omnis odit totam illum minus incidunt cupiditate dolore tempore pariatur, porro, eius rem nobis veritatis maxime sint similique. Aperiam, soluta. Deserunt!Doloribus velit nulla nemo recusandae rem suscipit tempora? Tenetur itaque praesentium, vitae, cum corrupti a, iusto quae suscipit unde officia illum harum explicabo ad numquam ab dolor quidem tempore similique?</p>
+          <p class="list-item__description"></p>
         </div>
       </article>
     </div>
   </template>
-  <template id="list-details">
+  <template id="item-details">
     <article class="ui grid item-details">
-      <a href="#">&lt Powrót</a>
+      <span class="item-details__back">&lt Powrót</span>
       <div class="row">
-        <img src="_description/pikachu.jpg" class="ui six wide column item-details__image">
+        <img src="" class="ui six wide column item-details__image">
         <div class="ui ten wide column grid">
-          <h3 class="thirteen wide column">Lorem ipsum dolor sit amet consectetur adipisicing elit.</h3>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque omnis odit totam illum minus incidunt cupiditate dolore tempore pariatur, porro, eius rem nobis veritatis maxime sint similique. Aperiam, soluta. Deserunt!Doloribus velit nulla nemo recusandae rem suscipit tempora? Tenetur itaque praesentium, vitae, cum corrupti a, iusto quae suscipit unde officia illum harum explicabo ad numquam ab dolor quidem tempore similique?</p>
+          <h3 class="thirteen wide column"></h3>
+          <p></p>
         </div>
       </div>
     </article>
   </template>
   <script src="./js/jquery-3.5.1.min.js"></script>
   <script src="./js/semantic.js"></script>
-  <script src="./js/fetchdata.js"></script>
+  <script src="./js/animelist.js"></script>
 </body>
 </html>
